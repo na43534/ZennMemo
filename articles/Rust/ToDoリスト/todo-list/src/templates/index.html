@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<ul>
+    {% for todo in todos %}
+    <li>
+        <a href="/todos/{{ todo.id }}/edit">{{ todo.title }}</a>
+        {% if todo.completed %}
+        <span>✔</span>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,29 @@
+ツイッターログイン機能
+https://aburasoba.org/twitter-login-laravel-socialite/
+
+【TwitterAPI】使ってみた(ユーザ情報取得)
+https://qiita.com/da-sugi/items/d3c5005c34100121a951
+
+PHPからTwitterを操作できる "TwitterOAuth" を使ってみよう
+https://weblabo.oscasierra.net/php-twitteroauth/
+
+Laravel SocialiteでTwitterのログイン認証を作る
+https://zenn.dev/himawarichan27/scraps/37e806dc8b62ff
+
+【Laravel】TwitterOAuth2.0でログインしてツイートする
+https://zenn.dev/himawarichan27/articles/2c9d5986fa2781
+
+DB作成
+ツイッター認証機能の作成
+
+次やること 環境構築と接続確認
+
+<template>
+  <div>
+    <h2>MyPage</h2>
+    <li>
+      <router-link to="/PostingCase">案件投稿</router-link>
+      <router-link to="/ApplyForCase">案件へ応募する</router-link>
+    </li>
+  </div>
+<template/>

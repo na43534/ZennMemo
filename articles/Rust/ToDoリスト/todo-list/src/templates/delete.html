@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% for todo in todos %}
+<form action="/todos/{{ todo.id }}" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <p>Are you sure you want to delete "{{ todo.title }}"?</p>
+    <input type="submit" value="Delete">
+</form>
+{% endfor %}
+{% endblock %}

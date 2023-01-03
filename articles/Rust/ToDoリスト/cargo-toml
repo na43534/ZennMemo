@@ -1,0 +1,22 @@
+[package]
+name = "todo-list"
+version = "0.1.0"
+authors = ["Your Name <you@example.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.7"
+rocket_contrib = { version = "0.4.7", features = ["template_response"] }
+diesel = { version = "1.4.4", features = ["mysql"] }
+dotenv = "0.15.0"
+
+[dependencies.rocket_codegen]
+version = "0.4.7"
+
+[build-dependencies]
+rocket_codegen = "0.4.7"
+
+[features]
+default = ["rocket_codegen"]

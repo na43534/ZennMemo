@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>TODOリスト</h1>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>タスク</th>
+        <th>操作</th>
+      </tr>
+      <!-- TODOリストをここに表示 -->
+    </table>
+    <form action="/create" method="post">
+      <label for="task">新しいタスク:</label>
+      <input type="text" name="task" id="task">
+      <input type="submit" value="追加">
+    </form>
+  </body>
+</html>
